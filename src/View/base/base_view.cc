@@ -2,7 +2,7 @@
 
 #include <limits>
 
-namespace s21 {
+namespace ng {
     void BaseView::Start() {
         bool stop = false;
 
@@ -106,4 +106,4 @@ namespace s21 {
                   << reset << std::endl;
     }
 
-}  // namespace s21
+}  // namespace ng

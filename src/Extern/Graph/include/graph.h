@@ -5,7 +5,7 @@
 
 #include "file_manager.h"
 
-namespace s21 {
+namespace ng {
     template<typename T>
     class Graph final {
         static_assert(std::is_integral<T>::value or std::is_floating_point<T>::value,
@@ -55,7 +55,7 @@ namespace s21 {
 
     template<typename T>
     std::ostream &operator<<(std::ostream &out, const Graph<T> &graph);
-}  // namespace s21
+}  // namespace ng
 
 #include "graph.tpp"
 

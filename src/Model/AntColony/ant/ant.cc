@@ -3,7 +3,7 @@
 #include <chrono>
 #include <random>
 
-namespace s21 {
+namespace ng {
     void Ant::MakeChoice(const Graph<double> &graph,
                          const Matrix<double> &pheromone, double alpha,
                          double beta) {
@@ -95,4 +95,4 @@ namespace s21 {
         path.distance += graph(current_location, next_vertex);
         current_location = next_vertex;
     }
-}  // namespace s21
+}  // namespace ng

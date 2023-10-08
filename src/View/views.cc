@@ -1,7 +1,7 @@
 #include "views.h"
 
 #ifdef ANT_COLONY
-namespace s21 {
+namespace ng {
     enum class AntChoice : int {
         kExitProgram,
         kCreateAdjacencyMatrixRandomly,
@@ -154,11 +154,11 @@ namespace s21 {
         std::cout << "Do you want to see the best ant path of algorithm? (0/1): ";
         std::cin >> need_print_matrix_;
     }
-}  // namespace s21
+}  // namespace ng
 #endif  // ANT_COLONY
 
 #ifdef GAUSS
-namespace s21 {
+namespace ng {
     enum class GaussChoice : int {
         kExitProgram,
         kCreateMatrixRandomly,
@@ -309,11 +309,11 @@ namespace s21 {
         std::cout << "Enter the top border of printing roots (Example: 100): ";
         std::cin >> top_border_print_;
     }
-}  // namespace s21
+}  // namespace ng
 #endif  // GAUSS
 
 #ifdef WINOGRAD
-namespace s21 {
+namespace ng {
     enum class WinogradChoice : int {
         kExitProgram,
         kCreateMatricesRandomly,
@@ -491,10 +491,10 @@ namespace s21 {
         std::cout << "Enter top border of printing (Example: 200): ";
         std::cin >> top_border_print_;
     }
-}  // namespace s21
+}  // namespace ng
 #endif  // WINOGRAD
 
-namespace s21 {
+namespace ng {
     BaseView &getViewInstance(Controller *controller) {
 #ifdef ANT_COLONY
         static AntView view(controller);
@@ -507,4 +507,4 @@ namespace s21 {
 #endif
         return view;
     }
-}  // namespace s21
+}  // namespace ng

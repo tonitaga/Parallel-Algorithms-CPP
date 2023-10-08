@@ -3,8 +3,8 @@
 #include "views.h"
 
 int main() {
-    s21::Model model;
-    s21::Controller controller(&model);
-    s21::getViewInstance(&controller).Start();
+    ng::Model model;
+    ng::Controller controller(&model);
+    ng::getViewInstance(&controller).Start();
     return EXIT_SUCCESS;
 }

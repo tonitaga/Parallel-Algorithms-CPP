@@ -6,7 +6,7 @@
 #include "graph_help.h"
 #include "matrix.h"
 
-namespace s21 {
+namespace ng {
     class FileManager final {
     public:
         template<typename T>
@@ -16,7 +16,7 @@ namespace s21 {
         static void SaveMatrixIntoFile(std::string_view path,
                                        const Matrix<T> &matrix);
     };
-}  // namespace s21
+}  // namespace ng
 
 #include "file_manager.tpp"
 

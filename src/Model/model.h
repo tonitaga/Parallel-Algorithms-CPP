@@ -17,7 +17,7 @@
 
 #include <chrono>
 
-namespace s21 {
+namespace ng {
     class Model final {
     public:
         void CreateMatrixAndFillRandomly(std::size_t square, double left,
@@ -76,6 +76,6 @@ namespace s21 {
             return duration_cast<nanoseconds>(end - begin).count() / 1'000'000.0;
         }
     };
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_MODEL_MODEL_H_

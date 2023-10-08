@@ -5,7 +5,7 @@
 
 #include "matrix.h"
 
-namespace s21 {
+namespace ng {
     using GaussTimed = std::pair<std::vector<double>, double>;
 
     class Gauss final {
@@ -23,6 +23,6 @@ namespace s21 {
         Matrix<double> matrix_;
         std::mutex mutex_;
     };
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_MODEL_GAUSS_GAUSS_H_

@@ -8,7 +8,7 @@
 
 #include "inf.h"
 
-namespace s21 {
+namespace ng {
     enum class GraphType : int {
         kEmptyGraph,
         kDirectedGraph,
@@ -42,6 +42,6 @@ namespace s21 {
     template<typename T>
     using edge_vector = std::vector<GraphEdge<T>>;
 
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_EXTERN_GRAPH_INCLUDE_GRAPH_HELP_H_

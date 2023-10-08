@@ -6,7 +6,7 @@
 #include <type_traits>
 #include <vector>
 
-namespace s21 {
+namespace ng {
     template<typename T>
     class Matrix final {
         static_assert(std::is_integral<T>::value or std::is_floating_point<T>::value,
@@ -60,7 +60,7 @@ namespace s21 {
 
     template<typename T>
     std::ostream &operator<<(std::ostream &out, const Matrix<T> &rhs);
-}  // namespace s21
+}  // namespace ng
 
 #include "matrix.tpp"
 

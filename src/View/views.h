@@ -5,7 +5,7 @@
 #include "controller.h"
 
 #ifdef ANT_COLONY
-namespace s21 {
+namespace ng {
     class AntView final : public BaseView {
     public:
         explicit AntView(Controller *controller) : controller_(controller) {};
@@ -27,11 +27,11 @@ namespace s21 {
 
         Controller *controller_;
     };
-}  // namespace s21
+}  // namespace ng
 #endif  // ANT_COLONY
 
 #ifdef GAUSS
-namespace s21 {
+namespace ng {
     class GaussView final : public BaseView {
     public:
         explicit GaussView(Controller *controller) : controller_(controller) {};
@@ -52,11 +52,11 @@ namespace s21 {
 
         Controller *controller_;
     };
-}  // namespace s21
+}  // namespace ng
 #endif  // GAUSS
 
 #ifdef WINOGRAD
-namespace s21 {
+namespace ng {
     class WinogradView final : public BaseView {
     public:
         explicit WinogradView(Controller *controller) : controller_(controller) {};
@@ -79,10 +79,10 @@ namespace s21 {
 
         Controller *controller_;
     };
-}  // namespace s21
+}  // namespace ng
 #endif  // WINOGRAD
 
-namespace s21 {
+namespace ng {
     BaseView &getViewInstance(Controller *controller);
 }
 

@@ -4,7 +4,7 @@
 #include "ant.h"
 #include "graph.h"
 
-namespace s21 {
+namespace ng {
     using AntColonyTimed = std::pair<AntPath, double>;
 
     class AntColonyOptimization {
@@ -50,6 +50,6 @@ namespace s21 {
 
         void UpdateGlobalPheromone(const Matrix<double> &local_pheromone);
     };
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_MODEL_ANT_COLONY_SINGLE_THREAD_ANT_COLONY_H_

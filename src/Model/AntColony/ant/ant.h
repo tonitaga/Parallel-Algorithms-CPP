@@ -4,7 +4,7 @@
 #include "ant_path.h"
 #include "graph.h"
 
-namespace s21 {
+namespace ng {
     struct Ant final {
         explicit Ant(std::size_t start_vertex = 0)
                 : start_location(start_vertex), current_location(start_vertex) {};
@@ -29,6 +29,6 @@ namespace s21 {
 
         static double GetRandomChoice();
     };
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_MODEL_ANT_COLONY_ANT_ANT_H_

@@ -5,7 +5,7 @@
 
 #include "matrix.h"
 
-namespace s21 {
+namespace ng {
     using WinogradTimed = std::pair<Matrix<double>, double>;
 
     class Winograd final {
@@ -51,6 +51,6 @@ namespace s21 {
 
         bool MatrixesIsInValid() const;
     };
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_MODEL_WINOGRAD_WINOGRAD_H_

@@ -6,7 +6,7 @@
 
 #include "file_manager.h"
 
-namespace s21 {
+namespace ng {
     template<typename T>
     Matrix<T> FileManager::ReadMatrixFromFile(std::string_view path, T) {
         Matrix<T> read_data;
@@ -56,6 +56,6 @@ namespace s21 {
             std::cerr << "Exception caught! Info: " << e.what() << std::endl;
         }
     }
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_EXTERN_GRAPH_INTERNAL_FILE_MANAGER_TPP_

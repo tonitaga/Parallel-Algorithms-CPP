@@ -8,7 +8,7 @@
 
 using namespace termcolor;
 
-namespace s21 {
+namespace ng {
     class BaseView {
     public:
         virtual void Start();
@@ -39,6 +39,6 @@ namespace s21 {
                             double pipeline_ms, int launches_count,
                             std::ostream &out = std::cout);
     };
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_VIEW_BASE_BASE_VIEW_H_

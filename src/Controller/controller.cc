@@ -1,6 +1,6 @@
 #include "controller.h"
 
-namespace s21 {
+namespace ng {
     void Controller::CreateMatrixAndFillRandomly(std::size_t square, double left,
                                                  double right) {
         model_->CreateMatrixAndFillRandomly(square, left, right);
@@ -74,4 +74,4 @@ namespace s21 {
     void Controller::DebugMatrices() { model_->DebugMatrices(); }
 
 #endif  // WINOGRAD
-}  // namespace s21
+}  // namespace ng

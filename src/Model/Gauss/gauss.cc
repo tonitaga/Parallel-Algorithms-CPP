@@ -2,7 +2,7 @@
 
 #include <execution>
 
-namespace s21 {
+namespace ng {
     std::vector<double> Gauss::SolveSystemOfLinearAlgebraicEquationsSequence() {
         if (!isGoodMatrix()) {
             std::cerr << "Matrix is invalid: rows must be equal to cols - 1"
@@ -99,7 +99,7 @@ namespace s21 {
 
         return correct_answer;
     }
-}  // namespace s21
+}  // namespace ng
 
 /*
      x991 = 2.005677     x992 = 0.554701    x993 = -6.164113    x994 = -9.513835

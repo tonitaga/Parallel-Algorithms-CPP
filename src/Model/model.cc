@@ -1,6 +1,6 @@
 #include "model.h"
 
-namespace s21 {
+namespace ng {
     void Model::CreateMatrixAndFillRandomly(std::size_t square, double left,
                                             double right) {
 #ifdef ANT_COLONY
@@ -132,4 +132,4 @@ namespace s21 {
     }
 
 #endif  // WINOGRAD
-}  // namespace s21
+}  // namespace ng

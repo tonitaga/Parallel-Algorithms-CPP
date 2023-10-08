@@ -3,7 +3,7 @@
 
 #include <limits>
 
-namespace s21 {
+namespace ng {
     template<typename T>
     constexpr T kInf = std::numeric_limits<T>::max();
 }

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <execution>
 
-namespace s21 {
+namespace ng {
     AntColonyOptimization::AntColonyOptimization(const Graph<double> &graph)
             : graph_(graph), kQ_(kQAspect_ * graph.getGraphWeight()) {
         InitializeStartPheromone();
@@ -165,4 +165,4 @@ namespace s21 {
 
         return shorter_path_is_find;
     }
-}  // namespace s21
+}  // namespace ng

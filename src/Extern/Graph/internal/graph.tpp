@@ -3,7 +3,7 @@
 
 #include "graph.h"
 
-namespace s21 {
+namespace ng {
     template<typename T>
     Graph<T>::Graph(const Matrix<value_type> &adjacency_matrix)
             : adjacency_matrix_(adjacency_matrix) {
@@ -152,6 +152,6 @@ namespace s21 {
 
         return str;
     }
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_EXTERN_GRAPH_INTERNAL_GRAPH_TPP_

@@ -4,7 +4,7 @@
 
 #include <random>
 
-namespace s21 {
+namespace ng {
     Winograd::Winograd(const Matrix<double> &m1, const Matrix<double> &m2)
             : matrix1_(m1), matrix2_(m2) {};
 
@@ -273,4 +273,4 @@ namespace s21 {
 
         return false;
     }
-}  // namespace s21
+}  // namespace ng

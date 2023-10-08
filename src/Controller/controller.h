@@ -3,7 +3,7 @@
 
 #include "model.h"
 
-namespace s21 {
+namespace ng {
     class Controller final {
     public:
         explicit Controller(Model *model) : model_(model) {};
@@ -46,6 +46,6 @@ namespace s21 {
     private:
         Model *model_;
     };
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_CONTROLLER_CONTROLLER_H_

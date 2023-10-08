@@ -11,7 +11,7 @@
 #include "inf.h"
 #include "matrix.h"
 
-namespace s21 {
+namespace ng {
     template<typename T>
     Matrix<T>::Matrix(size_type rows, size_type cols, value_type fill)
             : rows_(rows), cols_(cols), data_(rows_ * cols_, fill) {}
@@ -175,6 +175,6 @@ namespace s21 {
 
         return out;
     }
-}  // namespace s21
+}  // namespace ng
 
 #endif  // A3_PARALLELS_EXTERN_GRAPH_INTERNAL_MATRIX_TPP_
