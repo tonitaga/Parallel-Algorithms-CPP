@@ -51,6 +51,8 @@ make run_winograd
 
 ---
 
+[Ant Colony Optimization article <- click](https://habr.com/ru/companies/timeweb/articles/754462/)
+
 The Ant Colony Optimization algorithm is a algorithm
 inspired by the foraging behavior of ants.
 
